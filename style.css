@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body:before {
+  /* background-color: #fff; */
+  position: relative;
+  /* height: calc(100vh - 100px); */
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: "San Francisco Text Regular";
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  background: url('https://iili.io/yMnVgj.md.jpg') center center/cover no-repeat;
+  width: 100%;
+  height: 100%;
+  filter: blur(4.9px);
+ }
+.bok_atas{
+width: 300px;
+height: auto;
+background: #fff;
+margin-left: auto;
+margin-right: auto;
+padding:15px;
+margin: 30vh auto;
+border: 1px solid #000;
+border-radius: 5px;
+}
+.wrapper {
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.txt_satu{
+color: #555;
+font-weight: bold;
+text-align: left;
+text-shadow: 1px 0px rgba(0, 0, 0, 0.3);
+font-size: 18px;
+}
+h{
+color: #3578e5;
+font-weight: bold;
+}
+.load{
+    width: 100px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding:5px;
+}
+/* AREA POP UP LOGIN FB */
+	
+.popup{
+  opacity: 0;
+  transition: all .2s ease-in;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+    }
+
+    .popup__content{
+      background:#fff;
+      width: 320px;
+      height: 345px;
+      text-align: center;
+      position: relative;
+      margin: 10vh auto;
+      border-radius: 13px;
+      box-shadow: 0 .3px 2px rgb(133, 133, 133);
+    }
+.popup--show{
+      opacity: 1;
+    }
+.hallo{
+width: 130px;
+margin-left: auto;
+margin-right: auto;
+display: block;
+padding:15px;
+}
+.spc{
+margin-top:13px;
+}
+.spc1{
+margin-top:6px;
+}
+.modal-body {
+background:#fff;
+width: 280px;
+margin-left: auto;
+margin-right: auto;
+}
+.field{
+  position: relative;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  background: rgba(255,255,255,0.94);
+}
+.field span{
+  color: #3578e5;
+  width: 38px;
+  line-height: 45px;
+  
+}
+input[type="text"],
+ input[type="password"] {
+   position: relative;
+    width: 100%;
+    padding: 13px 11px;
+    background: #f5f6f7;
+    color: #555;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 .3px 2px rgb(133, 133, 133);
+    font-size: 14px;
+    outline: none;
+    color: rgba(0, 0, 0, 0.70);
+  }
+
+.space{
+  margin-top: 7px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.show{
+  margin-top: -2px;
+  position: absolute;
+  right: 65px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #3578e5;
+  display: none;
+  cursor: pointer;
+  font-family: 'Montserrat',sans-serif;
+}
+.pass-key:valid ~ .show{
+  display: block;
+}
+.pass{
+  text-align: left;
+  margin: 10px 0;
+}
+.pass a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Poppins',sans-serif;
+}
+.pass:hover a{
+  text-decoration: underline;
+  }
+.btn-login-fb {
+    background: #1778f2;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 0px rgba(0, 0, 0, 0.3);
+    border: 1px solid #3578e5;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    outline: none;
+    display: block;
+}
+
+.btn-login-fb.disabled {
+    pointer-events: none;
+    background: #8b9dc3;
+    border: 1px solid #8b9dc3;
+}
+.lupapw {
+    margin-top: 4px;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    color: #3578e5;
+    font-size: 13.5px;
+    font-family: "San Francisco Text Regular";
+    text-align: center;
+    cursor: pointer;
+    text-decoration:none;
+}
+or {
+    width: 92%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 14px;
+    color: #4b4f56;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+or hr {
+    height: .1px;
+    width: 100%;
+    background: #ccd0d5
+}
+.buat_a{
+    font-family: "San Francisco Text Regular";
+     margin-left: auto;
+    margin-right: auto;
+	border-radius: 5px;
+	background: #1b9c24;
+    width: 60%;
+    height: auto;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 3%;
+    display: block;
+    font-weight: bold;
+}
+a{
+cursor: pointer;
+text-decoration:none;
+color: #fff;
+font-size: 11.5px;
+text-align: center;
+}
+.login_form #email_error,
+.login_form #pass_error{
+	margin-top: -33px;
+	display: none;
+    position: relative;
+    width: auto;
+    padding: 10px;
+    background: red;
+    color: #fff;
+    font-size: 13px;
+    font-family: "Roboto";
+}
+#login_txt{
+   margin-top: -3px;
+    position: relative;
+    width: auto;
+    padding: 10px;
+    background: red;
+    color: #fff;
+    font-size: 13px;
+    font-family: "Roboto";
+    border-top: 1px solid #fff;
+}
